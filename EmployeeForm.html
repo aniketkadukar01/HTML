@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form action="employee registration" method="post">
+            <tr>
+                <td><label for="employee name">Name :</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter Name" autofocus 
+                    minlength="3" maxlength="30" vspace="10px" hspace="20px"></td>
+            </tr>
+            <tr>
+                <td><label for="employee id">Employee Id</label></td>
+                <td><input type="text" name="id" id="id" placeholder="Enter Id" autofocus
+                    required pattern="[0-9]{3,10}" vspace="10px" hspace="20px">
+                    <span style="color: red;">*</span>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="department">Department</label></td>
+                <td>
+                    <input type="radio" name="department" id="admin" value="admin" hspace="20px"><label for="admin">Admin</label> <br>
+                    <input type="radio" name="department" id="hr" value="hr" hspace="20px"><label for="hr" >Hr</label> <br>
+                    <input type="radio" name="department" id="technicals" value="technicals" hspace="20px"><label for="technicals">Technicals</label> <br>
+                    <input type="radio" name="department" id="accounts" value="accounts" hspace="20px"><label for="accounts">Accounts</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="date of Joining">Date of Joining</label></td>
+                <td><input type="date" name="date of joining" id="date" vspace="10px" hspace="20px"></td>
+            </tr>
+            <tr>
+                <td><label for="addr">Address</label></td>
+                <td><textarea name="addr" id="addr" cols="30" rows="10" vspace="10px" hspace="20px"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="trainig">Training Program Attended</label></td>
+                <td>
+                    <input type="checkbox" name="trainig" id="html" value="html" hspace="20px"><label for="html">Html/Dhtml</label> <br>
+                    <input type="checkbox" name="trainig" id="java" value="java" hspace="20px"><label for="java">Java</label> <br>
+                    <input type="checkbox" name="trainig" id="client" value="client" hspace="20px"><label for="client">Client/server</label> <br>
+                    <input type="checkbox" name="trainig" id=".net" value=".net" hspace="20px"><label for=".net" >.Net</label> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="program">Training Program Need to Attend</label></td>
+                <td>
+                    <select name="program" id="program"> 
+                        <option value="javascript">Javascript</option>
+                        <option value="jstruts">Jstruts</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="information">Send the Information at</label></td>
+                <td><a href="send.com">submit</a></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

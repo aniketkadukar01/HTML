@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <form action="register" method="post">
+            <tr>
+                <td><label for="name">Name : </label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address : </label></td>
+                <td><textarea name="addr" id="addr" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Date of Joning">Date of Joining : </label></td>
+                <td><input type="date" name="date" id="date" min="2000-12-12" max="2025-12-12"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email : </label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender : </label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="skills">Skills : </label></td>
+                <td>
+                    <input type="checkbox" name="skills" id="java" value="java"><label for="java">Java</label>
+                    <input type="checkbox" name="skills" id="c++" value="c++"><label for="c++">C++</label>
+                    <input type="checkbox" name="skills" id="dbs" value="dbs"><label for="dbs">Data Base Technology</label>
+                    <input type="checkbox" name="skills" id="python" value="python"><label for="python">Python</label>
+                    <input type="checkbox" name="Skills" id="linux" value="linux"><label for="linux">Linux</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="degree">Degree : </label></td>
+                <td>
+                    <input type="radio" name="degree" id="btech" value="btech"><label for="btech">BTech</label>
+                    <input type="radio" name="degree" id="phd" value="phd"><label for="phd">PHD</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="resume">Resume : </label></td>
+                <td><input type="file" name="resume" id="resume"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City : </label></td>
+                <td>
+                    <select name="city" id="city">
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Banglore">Banglore</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" name="register" id="register">Register Me</button>
+                    <button type="reset" name="reset" id="reset">Reset</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
